@@ -1,4 +1,4 @@
-from .VNet import VNet
+from .vnet import VNet
 from .UNet3D_contrastive import UNet3D
 
 
