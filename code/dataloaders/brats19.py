@@ -811,7 +811,7 @@ if __name__ == "__main__":
         axes[0].set_title('MRI Image')
         axes[1].imshow(label[:, :, label.shape[2] // 2], cmap='gray')
         axes[1].set_title('Mask')
-        plt.savefig("/content/drive/MyDrive/Research/fig/brats19_sample.png")
+        plt.savefig("/content/drive/MyDrive/Research/Fig/brats19_sample.png")
         plt.close()
         # plt.show()
 
