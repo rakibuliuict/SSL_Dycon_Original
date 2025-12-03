@@ -815,7 +815,7 @@ if __name__ == "__main__":
         plt.close()
         # plt.show()
 
-    data_path = "/content/drive/MyDrive/Research/DyCON/data/BraTS19"
+    data_path = "/content/drive/MyDrive/Research/Dataset/data/BraTS19"
     patch_size = (96, 96, 96)
     dataset = BraTS2019(
         base_dir=data_path, split='train', transform=T.Compose([
