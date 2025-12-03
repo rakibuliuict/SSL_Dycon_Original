@@ -69,7 +69,7 @@ gamma_str = f"_gamma{args.gamma}" if bool(args.use_focal) else ""
 teacher_str = "Teacher" if bool(args.use_teacher_loss) else "NoTeacher"
 
 snapshot_path = (
-    f"../models/{args.exp}/{args.model.upper()}_{args.labelnum}labels_"
+    f"/content/drive/MyDrive/Research/models/{args.exp}/{args.model.upper()}_{args.labelnum}labels_"
     f"{args.consistency_type}{gamma_str}_{focal_str}_{teacher_str}_temp{args.temp}"
     f"{beta_str}_max_iterations{args.max_iterations}"
 )
@@ -113,7 +113,7 @@ def plot_samples(image, mask, epoch):
     fig, ax = plt.subplots(1, 2, figsize=(10, 4))
     ax[0].imshow(image[1][:, :, image.shape[-1]//2], cmap='gray') # access the class at index 1
     ax[1].imshow(mask[:, :, mask.shape[-1]//2], cmap='viridis')
-    plt.savefig(f'../misc/train_preds/LA_sample_slice_{str(epoch)}.png')
+    plt.savefig(f'/content/drive/MyDrive/Research/LA_sample_slice_{str(epoch)}.png')
     plt.close()
 
 
